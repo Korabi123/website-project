@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Parallax portfolio</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo">Portfolio</a>
+            <ul class="navigation">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <section class="parallax">
+            <h2 id="text">Korab Imeri</h2>
+            <img src="monutain_01.png" id="m1">
+            <img src="trees_02.png" id="t2">
+            <img src="monutain_02.png" id="m2">
+            <img src="trees_01.png" id="t1">
+            <img src="man.png" id="man">
+            <img src="plants.png" id="plants">
+        </section>
+        <section class="sec">
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem at nemo, in quaerat dignissimos mollitia nam reprehenderit corrupti enim magni quasi nostrum velit nobis et voluptas dolor delectus vel tempora dolorum. Dolore at omnis placeat voluptatum deleniti porro, laborum minima quia dolores tempora, nam consequuntur a accusantium? Reiciendis aut eum, numquam hic ipsam enim explicabo aspernatur voluptate tempore earum, ea exercitationem quos maxime nihil, repudiandae dignissimos similique in odit delectus id aliquam culpa? Modi maiores similique accusamus ipsa minima incidunt quod aut amet eveniet doloribus? <br><br> Assumenda veniam, distinctio odit atque corporis ea inventore quibusdam asperiores natus dolor saepe officiis voluptatibus iusto reiciendis consequatur placeat quasi! Esse excepturi soluta, officiis nobis mollitia architecto culpa dolore rerum at animi possimus labore ipsum consequuntur iste delectus adipisci facere iusto laudantium voluptatum nihil! Quisquam, aperiam asperiores dignissimos iure consectetur quo eligendi eveniet aliquam officia? Facilis tenetur ratione molestiae aperiam corrupti tempora natus vero dolor eos quidem. Ipsum architecto deserunt velit minus accusantium, inventore labore nesciunt, ea nobis corporis qui odit excepturi sapiente quis necessitatibus hic voluptates praesentium consectetur. <br><br> Officia magni, pariatur sunt veniam quis blanditiis possimus eum quo ipsum dolorem asperiores, sit autem iste recusandae cum corporis quidem illum perferendis error nulla debitis reiciendis, alias tempora est! Qui blanditiis, temporibus porro veritatis omnis tempora accusamus, inventore possimus repellat, placeat rerum? Non illum quae omnis, debitis aperiam autem a aliquid necessitatibus molestiae veniam fugit. Est itaque ad officia temporibus animi provident? Doloribus explicabo facere porro minima vel eos quisquam harum repellendus sed omnis et excepturi quis, vitae eius aperiam soluta quia commodi pariatur aliquam at, fugit necessitatibus. Ab hic omnis ut sunt, sequi veritatis. Aut iusto quis quaerat expedita esse ut sint repellendus voluptatibus sapiente ea. Accusamus quas vitae quia ullam nam suscipit consequuntur veritatis voluptatibus sunt sint unde saepe sed, iste a error sapiente fugit esse consequatur ut tenetur laborum ducimus. Consectetur sunt aliquam, excepturi qui hic eligendi neque nostrum rem modi iusto ipsum inventore odio ratione aperiam atque possimus nisi magni exercitationem suscipit veniam dicta ipsa fuga! Iusto consequuntur ex, qui unde aperiam laboriosam ullam dolorem earum rerum. Deserunt dolor cumque, optio sapiente dolores exercitationem similique odit eveniet quod soluta nihil non nisi harum cum fugiat id minima, ratione minus hic nulla laboriosam vero quia rem? Maiores, corrupti aliquam. </p>
+        </section>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+        <script>
+            gsap.from("#m1",{
+                scrollTrigger : {
+                    scrub: true
+                },
+                y: 100,
+            })
+            gsap.from("#m2",{
+                scrollTrigger : {
+                    scrub: true
+                },
+                y: 50,
+            })
+            gsap.from("#t2",{
+                scrollTrigger : {
+                    scrub: true
+                },
+                x: -50
+            })
+            gsap.from("#t1",{
+                scrollTrigger : {
+                    scrub: true
+                },
+                x: 50
+            })
+            gsap.from("#man",{
+                scrollTrigger : {
+                    scrub: true
+                },
+                x: -250
+            })
+            gsap.from("#plants",{
+                scrollTrigger : {
+                    scrub: true
+                },
+                x: -50
+            })
+            gsap.from("#text",{
+                scrollTrigger : {
+                    scrub: true
+                },
+                x: 400
+            })
+        </script>
+    </body>
+</html>
